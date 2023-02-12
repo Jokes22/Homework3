@@ -14,7 +14,7 @@ public class Main {
         int q = 2000000;
         byte w = 125;
         short e = 27500;
-        long r = 99999999999L;
+        long r = 99_999_999_999L;
         float t = 1.123f;
         double y = 1.2131111111;
         System.out.println("Значение переменной q с типом int равно " + q);
@@ -40,7 +40,7 @@ public class Main {
         byte Anna = 27;
         byte Kate = 30;
         short paper = 480;
-        int calculated = 480 / (Lud + Anna + Kate);
+        int calculated = paper / (Lud + Anna + Kate);
         System.out.println("На каждого ученика рассчитано " + calculated + " листов бумаги");
 
     }
@@ -72,9 +72,9 @@ public class Main {
         byte color = 120;
         byte white = 2;
         byte brown = 4;
-        byte totalClass = (byte) (120 / (white + brown));
-        byte totalWhite = (byte) (totalClass * 2);
-        byte totalBrown = (byte) (totalClass * 4);
+        int totalClass = 120 / (white + brown);
+        int totalWhite = totalClass * 2;
+        int totalBrown = totalClass * 4;
         System.out.println("В школе, где " + totalClass + " классов, нужно " + totalWhite + " банок белой краски и " + totalBrown + " банок коричневой краски");
 
 
@@ -86,10 +86,10 @@ public class Main {
         short milkWeight = 2 * 105;
         short iceWeight = 2 * 100;
         short eggWeight = 4 * 70;
-        short totalWeight = (short) (bananaWeight + milkWeight + iceWeight + eggWeight);
+        int totalWeight = bananaWeight + milkWeight + iceWeight + eggWeight;
         System.out.println(totalWeight);
         int grPerKg = 1000;
-        float weightKg = totalWeight / (float) grPerKg;
+        float weightKg = totalWeight / (float)  grPerKg;
         System.out.println(weightKg);
     }
 
